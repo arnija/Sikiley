@@ -78,6 +78,10 @@ figcaption{color:var(--muted);font-style:italic;font-size:13.5px;text-align:cent
 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:380px){.two{grid-template-columns:1fr}}
 .two figure{margin:0}
+/* Víkka dálkinn og stækka letrið á stærri skjám (spjaldtölvur, tölvur) */
+@media(min-width:820px){.wrap{max-width:860px}body{font-size:17px}}
+@media(min-width:1200px){.wrap{max-width:1000px}body{font-size:18px}#townmap,#shopmap{height:520px!important}}
+@media(min-width:1600px){.wrap{max-width:1080px}}
 .day{margin:0 0 10px}
 .box{border-radius:8px;padding:14px 16px;margin:14px 0;border-left:5px solid var(--factbar);background:var(--factbg)}
 .box .bl{font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--factlab);margin-bottom:6px}
