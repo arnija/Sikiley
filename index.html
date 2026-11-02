@@ -82,6 +82,11 @@ figcaption{color:var(--muted);font-style:italic;font-size:13.5px;text-align:cent
 @media(min-width:820px){.wrap{max-width:860px}body{font-size:17px}}
 @media(min-width:1200px){.wrap{max-width:1000px}body{font-size:18px}#townmap,#shopmap{height:520px!important}}
 @media(min-width:1600px){.wrap{max-width:1080px}}
+/* Breiður skjár: láttu stakar ljósmyndir fljóta við hlið textans (ekki kort né mynda-pör) */
+@media(min-width:1000px){
+  section > figure:has(> img){float:right;width:40%;max-width:430px;margin:4px 0 16px 28px}
+  section::after{content:"";display:block;clear:both}
+}
 .day{margin:0 0 10px}
 .box{border-radius:8px;padding:14px 16px;margin:14px 0;border-left:5px solid var(--factbar);background:var(--factbg)}
 .box .bl{font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--factlab);margin-bottom:6px}
