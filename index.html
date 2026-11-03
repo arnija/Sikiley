@@ -84,8 +84,9 @@ figcaption{color:var(--muted);font-style:italic;font-size:13.5px;text-align:cent
 @media(min-width:1600px){.wrap{max-width:1080px}}
 /* Breiður skjár: láttu stakar ljósmyndir fljóta við hlið textans (ekki kort né mynda-pör) */
 @media(min-width:1000px){
-  section > figure:has(> img){float:right;width:46%;max-width:500px;margin:4px 0 16px 28px}
-  section::after{content:"";display:block;clear:both}
+  /* breiður skjár: hóflegar, miðjaðar myndir (engin flot — hreint og jafnt) */
+  section > figure:has(> img){max-width:640px;margin:18px auto}
+  .two{max-width:720px;margin-left:auto;margin-right:auto}
 }
 .day{margin:0 0 10px}
 .box{border-radius:8px;padding:14px 16px;margin:14px 0;border-left:5px solid var(--factbar);background:var(--factbg)}
